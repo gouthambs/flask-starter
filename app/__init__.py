@@ -16,6 +16,8 @@ app = Flask(__name__,
             template_folder = os.path.join(BASEDIR,"templates"),
             static_folder   = os.path.join(BASEDIR,"static"),
             static_url_path = "/static")
+
+app.config['SITENAME'] = "Flask-Base"
 app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = 'super-secret'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
