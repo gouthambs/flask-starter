@@ -20,11 +20,7 @@ def create_user():
     user_datastore.create_user(email='gouthambs@gmail.com', password='password')
     db.session.commit()
 
-# Views
-@app.route('/')
-@login_required
-def home():
-    return render_template('index.html')
+
 
 if __name__ == '__main__':
     app.run()
