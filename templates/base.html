@@ -48,7 +48,15 @@
     <div class="container" role="main">
         <div >
         <br><br>
-    {% block maincontent %} {% endblock %}    
+            <div class="row">
+                <div class="col-md-3">
+                    {% block sidecontent %} {% endblock %}    
+                </div>
+                <div class="col-md-9">
+                    {% block maincontent %} {% endblock %}    
+                </div>
+            
+            </div>
         </div>
     </div><!-- /.container -->
     
